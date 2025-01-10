@@ -1,0 +1,172 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos de enlaces */
+a {
+    color: #4C9BFB !important; /* Un azul más suave y espacial */
+    text-decoration: none !important;
+    font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+a:hover {
+    color: #FF7043 !important; /* Un color naranja suave para el hover */
+    text-decoration: underline !important;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2C3E50; /* Mantener el fondo oscuro */
+    color: #ECF0F1; /* Color de texto claro */
+    text-align: center;
+    line-height: 1.6;
+    background-image: url('https://www.example.com/your-background-image.jpg'); /* Fondo con imagen sutil */
+    background-size: cover;
+    background-attachment: fixed;
+    filter: brightness(0.9) contrast(1.2); /* Control del brillo y contraste */
+    transition: background-image 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+/* Cabecera */
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro para mayor contraste */
+    color: #fff;
+    padding: 40px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    position: relative;
+    z-index: 2;
+}
+
+#logo {
+    width: 180px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 45px;
+    margin: 20px 0;
+    font-weight: 700;
+    color: #8E44AD; /* Color púrpura profundo */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #BDC3C7;
+}
+
+/* Sección de temporadas */
+#seasons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.season-button {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro con opacidad */
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: #ECF0F1;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.season-button:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.season-button h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #4C9BFB; /* Azul suave para los títulos */
+}
+
+.season-button p {
+    font-size: 16px;
+    color: #BDC3C7;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.season-button .season-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.season-button:hover .season-image {
+    opacity: 0.9;
+}
+
+/* Efecto de Descripción al pasar por el mouse */
+.season-button:hover p {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 90%;
+    margin: 0 auto;
+    transition: opacity 0.3s ease;
+}
+
+/* Estilo para botones generales */
+button {
+    background-color: #4C9BFB; /* Azul espacial */
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #FF7043; /* Naranja suave para hover */
+    transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+    background-color: #1A252F;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+#footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#footer p {
+    margin: 0;
+    font-size: 14px;
+}
